@@ -27,18 +27,8 @@ class Layout extends StatelessWidget {
               Row(
                 children: const [
                   BlueBox(),
-                  SizedBox(
-                    width: 150,
-                    child: BlueBox(),
-                  ),
-                  BlueBox(),
-                ],
-              ),
-              Row(
-                children: const [
-                  BlueBox(),
-                  SizedBox(
-                    width: 150,
+                  Spacer(
+                    flex: 2,
                   ),
                   BlueBox(),
                 ],
