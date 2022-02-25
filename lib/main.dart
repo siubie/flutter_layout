@@ -24,14 +24,12 @@ class Layout extends StatelessWidget {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Flexible(
-                fit: FlexFit.loose,
+              Expanded(
                 flex: 1,
                 child: BlueBox(),
               ),
-              Flexible(
-                fit: FlexFit.loose,
-                flex: 1,
+              Expanded(
+                flex: 2,
                 child: BlueBox(),
               ),
               BlueBox(),
