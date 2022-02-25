@@ -21,18 +21,28 @@ class Layout extends StatelessWidget {
         ),
         body: Container(
           color: Colors.grey,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: const [
-              Expanded(
-                flex: 1,
-                child: BlueBox(),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(
+                children: const [
+                  BlueBox(),
+                  SizedBox(
+                    width: 150,
+                    child: BlueBox(),
+                  ),
+                  BlueBox(),
+                ],
               ),
-              Expanded(
-                flex: 2,
-                child: BlueBox(),
+              Row(
+                children: const [
+                  BlueBox(),
+                  SizedBox(
+                    width: 150,
+                  ),
+                  BlueBox(),
+                ],
               ),
-              BlueBox(),
             ],
           ),
         ),
