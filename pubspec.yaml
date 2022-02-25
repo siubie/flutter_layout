@@ -75,7 +75,11 @@ flutter:
     - family: Lato
       fonts:
         - asset: fonts/Lato-Bold.ttf
+          weight: 700
         - asset: fonts/Lato-Regular.ttf
+    - family: Bebas
+      fonts:
+        - asset: fonts/BebasNeue-Regular.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf
