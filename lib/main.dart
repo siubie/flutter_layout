@@ -23,8 +23,16 @@ class Layout extends StatelessWidget {
           color: Colors.grey,
           child: Row(
             children: [
-              BlueBox(),
-              BlueBox(),
+              Flexible(
+                fit: FlexFit.tight,
+                flex: 1,
+                child: BlueBox(),
+              ),
+              Flexible(
+                fit: FlexFit.tight,
+                flex: 2,
+                child: BlueBox(),
+              ),
               BlueBox(),
             ],
           ),
