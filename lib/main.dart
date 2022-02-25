@@ -23,7 +23,7 @@ class Layout extends StatelessWidget {
           color: Colors.grey,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
+            children: const [
               Expanded(
                 flex: 1,
                 child: BlueBox(),
