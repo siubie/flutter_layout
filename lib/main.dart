@@ -24,33 +24,21 @@ class Layout extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Row(
-                crossAxisAlignment: CrossAxisAlignment.baseline,
-                textBaseline: TextBaseline.alphabetic,
                 children: const [
-                  Text(
-                    'Hey!',
-                    style: TextStyle(
-                      fontSize: 30,
-                      fontFamily: 'Bebas',
-                      color: Colors.blue,
-                    ),
+                  Icon(
+                    Icons.widgets,
+                    size: 100,
+                    color: Colors.blue,
                   ),
-                  Text(
-                    'Hey!',
-                    style: TextStyle(
-                      fontSize: 50,
-                      fontFamily: 'Lato',
-                      color: Colors.green,
-                      fontWeight: FontWeight.bold,
-                    ),
+                  Icon(
+                    Icons.timeline,
+                    size: 100,
+                    color: Colors.pink,
                   ),
-                  Text(
-                    'Hey!',
-                    style: TextStyle(
-                      fontSize: 40,
-                      fontFamily: 'Futura',
-                      color: Colors.red,
-                    ),
+                  Icon(
+                    Icons.widgets,
+                    size: 100,
+                    color: Colors.green,
                   ),
                 ],
               ),
