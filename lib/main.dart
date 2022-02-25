@@ -22,15 +22,16 @@ class Layout extends StatelessWidget {
         body: Container(
           color: Colors.grey,
           child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Flexible(
-                fit: FlexFit.tight,
+                fit: FlexFit.loose,
                 flex: 1,
                 child: BlueBox(),
               ),
               Flexible(
-                fit: FlexFit.tight,
-                flex: 2,
+                fit: FlexFit.loose,
+                flex: 1,
                 child: BlueBox(),
               ),
               BlueBox(),
