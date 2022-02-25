@@ -25,15 +25,16 @@ class Layout extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
               Flexible(
-                fit: FlexFit.loose,
                 flex: 1,
+                fit: FlexFit.loose,
                 child: BlueBox(),
               ),
               Flexible(
+                flex: 2,
                 fit: FlexFit.loose,
-                flex: 1,
                 child: BlueBox(),
               ),
+              BlueBox(),
               BlueBox(),
             ],
           ),
