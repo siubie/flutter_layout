@@ -20,28 +20,33 @@ class Layout extends StatelessWidget {
           title: Text("Belajar Layout"),
         ),
         body: Container(
-          color: Colors.grey,
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Row(
-                children: const [
-                  BlueBox(),
-                  SizedBox(
-                    width: 150,
-                    child: BlueBox(),
-                  ),
-                  BlueBox(),
-                ],
+              Container(
+                margin: EdgeInsets.only(top: 20),
+                color: Colors.red,
+                child: Row(
+                  children: const [
+                    BlueBox(),
+                    SizedBox(
+                      width: 175,
+                      child: BlueBox(),
+                    ),
+                    BlueBox(),
+                  ],
+                ),
               ),
-              Row(
-                children: const [
-                  BlueBox(),
-                  SizedBox(
-                    width: 150,
-                  ),
-                  BlueBox(),
-                ],
+              Container(
+                margin: EdgeInsets.only(top: 20),
+                color: Colors.amber,
+                child: Row(
+                  children: const [
+                    BlueBox(),
+                    SizedBox(width: 50),
+                    BlueBox(),
+                  ],
+                ),
               ),
             ],
           ),
