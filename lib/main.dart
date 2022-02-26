@@ -20,26 +20,72 @@ class Layout extends StatelessWidget {
           title: Text("Belajar Layout"),
         ),
         body: Container(
+          margin: EdgeInsets.all(10),
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: const [
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Icon(
+                      Icons.account_circle,
+                      size: 50,
+                    ),
+                  ),
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Flutter Mc Flutterr",
+                        style: TextStyle(
+                          fontSize: 24,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      Text(
+                        "Experienced app developer",
+                        style: TextStyle(
+                          fontSize: 16,
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("123 Main Street"),
+                    Text("(123) 456-7890"),
+                  ],
+                ),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
                   Icon(
-                    Icons.widgets,
-                    size: 100,
-                    color: Colors.blue,
+                    Icons.accessibility,
+                    size: 50,
                   ),
                   Icon(
-                    Icons.timeline,
-                    size: 100,
-                    color: Colors.pink,
+                    Icons.timer,
+                    size: 50,
                   ),
                   Icon(
-                    Icons.widgets,
-                    size: 100,
-                    color: Colors.green,
+                    Icons.phone_android,
+                    size: 50,
+                  ),
+                  Icon(
+                    Icons.phone_iphone,
+                    size: 50,
                   ),
                 ],
               ),
