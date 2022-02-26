@@ -24,6 +24,7 @@ class Layout extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: const [
                   Icon(
                     Icons.widgets,
