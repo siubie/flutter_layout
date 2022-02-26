@@ -30,7 +30,7 @@ class Layout extends StatelessWidget {
                   Text(
                     'Hey!',
                     style: TextStyle(
-                      fontSize: 30,
+                      fontSize: 70,
                       fontFamily: 'Bebas',
                       color: Colors.blue,
                     ),
